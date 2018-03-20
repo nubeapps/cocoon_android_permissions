@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-android-permisos" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Permisos Android</name>
+    <author>nubeapps</author>
+    <description>Cordova plugin to add android permissions.</description>
+    <keywords>permisos cordova</keywords>
+    <license></license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+        <uses-feature android:name="android.hardware.camera" android:required="true" />
+      </config-file>
+    </platform>
+</plugin>
